@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => ({
   base: "/model/", // IMPORTANT → must match your repo name exactly
   server: {
     host: "::",
-    port: 8080,
+    port: 4173,
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
