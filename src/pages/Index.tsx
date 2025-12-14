@@ -1,3 +1,5 @@
+// FORCE CHANGE – jsPDF static import fix
+
 import { useState } from "react";
 import { ControlPanel } from "@/components/ControlPanel";
 import { DesignCanvas } from "@/components/DesignCanvas";
