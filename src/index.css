@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Textile industry-inspired color palette */
+    --background: 28 25% 97%;
+    --foreground: 220 15% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 20%;
+
+    /* Deep indigo - professional, textile industry */
+    --primary: 220 70% 28%;
+    --primary-foreground: 0 0% 98%;
+
+    /* Warm terracotta accent */
+    --secondary: 15 65% 92%;
+    --secondary-foreground: 220 70% 28%;
+
+    --muted: 28 20% 92%;
+    --muted-foreground: 220 10% 45%;
+
+    /* Rich burgundy accent */
+    --accent: 350 65% 52%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 28 15% 88%;
+    --input: 28 15% 88%;
+    --ring: 220 70% 28%;
+
+    --radius: 0.75rem;
+
+    /* Gradients for premium feel */
+    --gradient-primary: linear-gradient(135deg, hsl(220 70% 28%), hsl(220 70% 38%));
+    --gradient-accent: linear-gradient(135deg, hsl(350 65% 52%), hsl(15 75% 58%));
+    --gradient-subtle: linear-gradient(180deg, hsl(28 25% 97%), hsl(28 20% 94%));
+    --gradient-bg: linear-gradient(135deg, #141e30, #2a6c56);
+
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(220 70% 28% / 0.2);
+    --shadow-soft: 0 4px 12px hsl(220 10% 20% / 0.08);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Neon green accent */
+    --neon-green: 158 97% 60%;
+  }
+
+  .dark {
+    --background: 220 20% 12%;
+    --foreground: 28 20% 92%;
+
+    --card: 220 18% 16%;
+    --card-foreground: 28 20% 92%;
+
+    --popover: 220 18% 16%;
+    --popover-foreground: 28 20% 92%;
+
+    --primary: 220 70% 55%;
+    --primary-foreground: 220 20% 12%;
+
+    --secondary: 220 15% 20%;
+    --secondary-foreground: 28 20% 92%;
+
+    --muted: 220 15% 20%;
+    --muted-foreground: 28 15% 65%;
+
+    --accent: 350 65% 58%;
+    --accent-foreground: 28 20% 92%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 28 20% 92%;
+
+    --border: 220 15% 22%;
+    --input: 220 15% 22%;
+    --ring: 220 70% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
